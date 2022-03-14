@@ -108,8 +108,8 @@ impl VanBinh {
 
     fn add_customer(&mut self, name: String, favorite_order: Order) {
         self.customers.push(Customer {
-            name: name,
-            favorite_order: favorite_order,
+            name,
+            favorite_order,
         });
     }
 
