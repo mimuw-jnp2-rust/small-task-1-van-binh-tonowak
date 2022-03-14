@@ -45,7 +45,8 @@ impl Order {
     fn dish_count(&self, dish: Dish) -> u32 {
         let mut ret = 0;
         for item in self.items.iter() {
-            if *item == dish { // ?
+            if *item == dish {
+                // ?
                 ret += 1;
             }
         }
@@ -191,7 +192,7 @@ fn main() {
 
         if order.items_count() == 0 {
             println!("Your order is empty!");
-            continue
+            continue;
         }
 
         println!("This is order no. {}", van_binh.get_orders_count());
