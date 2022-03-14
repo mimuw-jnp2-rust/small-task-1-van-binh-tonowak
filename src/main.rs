@@ -101,7 +101,7 @@ struct VanBinh {
 impl VanBinh {
     pub fn new() -> VanBinh {
         VanBinh {
-            orders_count: 0,
+            orders_count: 1,
             customers: Vec::new(),
         }
     }
